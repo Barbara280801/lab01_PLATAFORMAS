@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Campo para el nombre -->
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo para el apellido -->
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo para el correo -->
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/et_apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo para el teléfono -->
+    <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_correo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo para el grupo sanguíneo -->
+    <EditText
+        android:id="@+id/et_grupo_sanguineo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Grupo Sanguíneo"
+        app:layout_constraintTop_toBottomOf="@+id/et_telefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para registrar datos -->
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar Datos"
+        app:layout_constraintTop_toBottomOf="@+id/et_grupo_sanguineo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para leer datos -->
+    <Button
+        android:id="@+id/btn_leer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Leer Datos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
